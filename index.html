@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Aprenda alguns origamis</title>
+  <style>
+    /* Define a fonte e o estilo para o título */
+    h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 3em;
+      font-weight: bold;
+      text-align: center;
+      margin-top: 50px;
+    }
+
+    /* Define o fundo do corpo da página */
+    body {
+      background-image: url('https://img.olhardigital.com.br/wp-content/uploads/2021/09/Criatividade.jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    /* Define o estilo das divs que contêm os vídeos */
+    .video-container {
+      position: relative;
+      padding-bottom: 56.25%;
+      height: 0;
+      overflow: hidden;
+      margin-top: 20px;
+    }
+
+    .video-container iframe,
+    .video-container object,
+    .video-container embed {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+
+    /* Define estilos diferentes para telas menores que 768 pixels */
+    @media only screen and (max-width: 768px) {
+      /* Reduz o tamanho do título */
+      h1 {
+        font-size: 2em;
+      }
+      
+      /* Ajusta o espaçamento dos vídeos */
+      .video-container {
+        margin-top: 20px;
+      }
+      
+      /* Reduz o tamanho dos vídeos */
+      .video-container iframe {
+        width: 100%;
+        height: auto;
+      }
+    }
+  </style>
+  <link href="https://fonts.googleapis.com/css?family=Playfair+Display&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="creator-info">Criado por Guilherme</div>
+  <h1>Aprenda alguns origamis</h1>
+
+  <div class="video-container">
+    <h2>Origami Tsuru</h2>
+    <iframe width="400" height="225" src="https://www.youtube.com/embed/pzS0ToWZ9DA" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+  </div>
+
+  <div class="video-container">
+    <h2>Origami Dragão</h2>
+    <iframe width="400" height="225" src="https://www.youtube.com/embed/kUsxMXwCW8A" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+  </div>
+
+  <div class="video-container">
+    <h2>Origami caixa livro</h2>
+    <iframe width="400" height="225" src="https://www.youtube.com/embed/drT-Qp1PA30" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+  </div>
+
+</body>
+</html>
